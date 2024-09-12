@@ -1,1 +1,22 @@
-<p>parcial-1 works!</p>
+<article class="card">
+    <header class="card-header">
+        formulario
+    </header>
+    <form class="card-body">
+        <h5 class="card-title">Color hexadecimal</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+        <div class="mb-3">
+            <label for="colorHex" class="form-label">Digite un color</label>
+            <div class="d-flex">
+                <input type="text" class="form-control" name="colorHex" id="colorHex" placeholder="ej: 333" [(ngModel)]="color" (keyup)="ValidarColor()">
+            </div>
+            <p class="text-danger" id="colorHelp"></p>
+        </div>
+    </form>
+</article>
+
+<h3 class="text-center mt-3">Elemento HTML</h3>
+<div class="card mt-3 contenedor-color d-flex justify-content-center align-content-center" [style.backgroundColor] = "color">
+    <span class="text-center fw-bold h1">{{ color }}</span>
+</div>
