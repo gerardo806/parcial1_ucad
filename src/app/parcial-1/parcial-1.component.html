@@ -1,13 +1,16 @@
 <article class="card">
-    <header class="card-header">
+    <header class="card-header bg-primary text-white">
         formulario
     </header>
     <form class="card-body">
         <h5 class="card-title">Color hexadecimal</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text">
+            Son códigos numéricos que representan los diferentes colores usados en el 
+            lenguaje html y CSS para el diseño web.
+        </p>
 
         <div class="mb-3">
-            <label for="colorHex" class="form-label">Digite un color</label>
+            <label for="colorHex" class="form-label">Digite un color hexadecimal o un color por defecto</label>
             <div class="d-flex">
                 <input type="text" class="form-control" name="colorHex" id="colorHex" placeholder="ej: 333" [(ngModel)]="color" (keyup)="ValidarColor()">
             </div>
