@@ -18,5 +18,5 @@
 
 <h3 class="text-center mt-3">Elemento HTML</h3>
 <div class="card mt-3 contenedor-color d-flex justify-content-center align-content-center" [style.backgroundColor] = "color">
-    <span class="text-center fw-bold h1">{{ color }}</span>
+    <span class="text-center fw-bold h1">{{ color !== ""? color: "Sin color" }}</span>
 </div>

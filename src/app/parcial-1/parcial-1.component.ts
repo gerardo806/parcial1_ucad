@@ -24,7 +24,7 @@ export class Parcial1Component {
         this.clearMsgWarning();
       }
     }else{
-      this.msgWarning('Color no valido')
+      this.msgWarning('Color no valido');
     }
   }
 
